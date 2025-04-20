@@ -9,6 +9,8 @@ git submodule update
 # local.conf won't exist until this step on first execution
 source poky/oe-init-build-env
 
+DEBUG_PREFIX_MAP=""
+
 CONFLINE="MACHINE = \"qemuarm64\""
 
 cat conf/local.conf | grep "${CONFLINE}" > /dev/null
